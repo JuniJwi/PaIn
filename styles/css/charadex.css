@@ -52,8 +52,8 @@ body {
   /* Navbar
   ================================================================ */
   --cd-navbar-background-color: rgba(0,0,0,.9);
-  --cd-navbar-brand-color: var(--cd-primary-color);
-  --cd-navbar-brand-color-hover: var(--cd-secondary-color);
+  --cd-navbar-brand-color: var(--cd-body-background-color);
+  --cd-navbar-brand-color-hover: var(--cd-primary-color);
   --cd-navbar-text-color: var(--cd-content-background-color);
   --cd-navbar-link-color: var(--cd-navbar-text-color);
   --cd-navbar-link-color-hover: var(--cd-primary-color);
@@ -125,7 +125,7 @@ body {
   /* Link
   ================================================================ */
 
-  --cd-link-text-color: #4c8ebd;
+  --cd-link-text-color: var(--cd-primary-color);
   --cd-link-text-color-hover: var(--cd-secondary-color);
 
 
@@ -265,8 +265,12 @@ a:active {
 }
 
 .navbar .navbar-brand {
-  color: var(--cd-navbar-brand-color) !important;
+  color: var(--cd-navbar-brand-color-hover) !important;
   font-size: 2rem;
+}
+
+.navbar .navbar-brand::first-letter {
+  color: var(--cd-navbar-brand-color) !important;
 }
 
 .navbar .navbar-brand:hover,
