@@ -29,7 +29,7 @@ body {
   ================================================================ */
   --cd-body-background-color: rgb(236, 236, 236);
   --cd-content-background-color: #a0d2cddb;
-  --cd-faded-background-color: #293338c9;
+  --cd-faded-background-color: rgba(236, 236, 236, 0.9);
 
   /* Background Extras */
   --cd-body-background-image: url();
