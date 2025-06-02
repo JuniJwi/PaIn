@@ -583,6 +583,10 @@ a.badge.badge-primary:active,
   color: var(--cd-faded-text-color) !important;
 }
 
+.text-loud {
+  color: var(--cd-primary-color) !important;
+}
+
 h1, h2, h3,
 h4, h5, h6 {
   font-family: var(--cd-navbar-font-family) !important;
