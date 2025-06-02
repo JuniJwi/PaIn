@@ -11,10 +11,10 @@
   <!-- About Your Site                                                   -->
   <!-- ----------------------------------------------------------------- -->
   <link rel="shortcut icon" type="image/png" href="assets/favicon.png" />
-  <title>World</title>
-  <meta name="title" content="Charadex World" />
+  <title>Charadex Lore</title>
+  <meta name="title" content="Charadex Lore" />
   <meta name="type" content="website" />
-  <meta name="url" content="/" />
+  <meta name="url" content="" />
   <meta name="image" content="assets/meta.png" />
   <meta name="description" content="">
 
@@ -28,6 +28,8 @@
   <!-- ----------------------------------------------------------------- -->
 
   <!-- Bootstrap CSS -->
+  <!-- Using Bootstrap 4.5 because its closest to Toyhou.se's current version -->
+  <!-- https://getbootstrap.com/docs/4.5/getting-started/introduction/ -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
   <!-- Font Awesome Icons -->
@@ -60,14 +62,44 @@
   <-- Main List
   <-------------------------------------------------------------------- -->
   <div class="container" id="main-container">
-    <div class="card p-md-5 p-4">
+    <div class="card p-md-5 p-4 mb-4">
 
-      <!-- General Info
-      <-------------------------------------------------------------------- -->
-      <div class="p-3">
-        <h3 class="text-primary mb-3">About World</h3>
-        <div class="px-4">
-          <p>This is where you can write about your world and stuff!!</p>
+      <!-- Title
+      <!-- --------------------------------------------------------------- -->
+      <h3 class="mb-0"><a href="info/">Info</a></h3>
+
+      <!-- Faux Folders
+      <!-- --------------------------------------------------------------- -->
+      <hr>
+      <ul class="nav nav-pills nav-justified justify-content-center m-n1">
+        <li class="nav-item p-1" role="presentation">
+          <button class="nav-link active" id="premise-tab" data-bs-toggle="tab" data-bs-target="#premise" type="button" role="tab" aria-controls="premise" aria-selected="true">Premise</button>
+        </li>
+        <li class="nav-item p-1" role="presentation">
+          <button class="nav-link" id="lore-tab" data-bs-toggle="tab" data-bs-target="#lore" type="button" role="tab" aria-controls="lore" aria-selected="false">Lore</button>
+        </li>
+        <li class="nav-item p-1" role="presentation">
+          <button class="nav-link" id="rules-tab" data-bs-toggle="tab" data-bs-target="#rules" type="button" role="tab" aria-controls="rules" aria-selected="false">Rules</button>
+        </li>
+        <li class="nav-item p-1" role="presentation">
+          <button class="nav-link" id="mechanics-tab" data-bs-toggle="tab" data-bs-target="#mechanics" type="button" role="tab" aria-controls="mechanics" aria-selected="false">Mechanics</button>
+        </li>
+      </ul>
+
+      <!-- Page Tabs
+      <!-- --------------------------------------------------------------- -->
+      <div class="tab-content" style="height: 590px;">
+        <div class="h-100 tab-pane fade active show overflow-auto" id="premise" role="tabpanel" aria-labelledby="home-tab">
+          <div class="load-html" id="rules-content" data-source="info/premise.html"></div>
+        </div>
+        <div class="h-100 tab-pane fade overflow-auto" id="lore" role="tabpanel" aria-labelledby="lore-tab">
+          <div class="load-html" id="rules-content" data-source="info/lore.html"></div>
+        </div>
+        <div class="h-100 tab-pane fade overflow-auto" id="rules" role="tabpanel" aria-labelledby="rules-tab">
+          <div class="load-html" id="rules-content" data-source="info/rules.html"></div>
+        </div>
+        <div class="h-100 tab-pane fade overflow-auto" id="mechanics" role="tabpanel" aria-labelledby="mechanics-tab">
+          <div class="load-html" id="mechanics-content" data-source="info/mechanics.html"></div>
         </div>
       </div>
 
@@ -89,10 +121,12 @@
   <!-- Bootstrap -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
+
   <!-- Charadex Script -->
   <script src="styles/js/pages/base.js" type="module"></script>
+  <script src="styles/js/pages/info.js" type="module"></script>
 
-
+  
 </body>
 
 </html>
