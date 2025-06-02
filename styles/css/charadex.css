@@ -613,6 +613,14 @@ img {
   border-radius: 0 !important;
 }
 
+/* Custom bullet list style */
+ul {
+  list-style-type: ">> ";
+}
+
+li::marker {
+  color: var(--cd-primary-color);
+}
 
 /* ============================================================= */
 /* Loading
