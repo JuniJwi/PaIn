@@ -15,9 +15,9 @@ let charadex = {};
 /* Any preview links will still show Charadex's information
 /* ==================================================================== */
 charadex.site = {
-  title: "Charadex",
-  url: "https://charadex-team.github.io/charadex-v1.0/",
-  description: `A tool for organizing small ARPGs and species.`
+  title: "Paradigm Infinite",
+  url: "https://junijwi.github.io/ParadigmInfinite/",
+  description: `Paradigm Infinite (PaIn) is a hub-style, existential horror roleplay group in a modern day setting.`
 }
 
 /* ==================================================================== */
