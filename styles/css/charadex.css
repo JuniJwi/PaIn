@@ -226,6 +226,7 @@ body {
   /* Global Text */
   color: var(--cd-body-text-color);
   font-family: var(--cd-body-font-family);
+  font-size: 10px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
@@ -275,6 +276,7 @@ a:active {
 }
 
 .navbar .navbar-brand strong {
+  font-weight: normal;
   color: var(--cd-navbar-brand-color-hover) !important;
 }
 
