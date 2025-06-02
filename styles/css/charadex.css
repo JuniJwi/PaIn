@@ -52,7 +52,7 @@ body {
   /* Navbar
   ================================================================ */
   --cd-navbar-background-color: rgba(0,0,0,.9);
-  --cd-navbar-brand-color: var(--cd-body-background-color);
+  --cd-navbar-brand-color: var(--cd-secondary-color);
   --cd-navbar-brand-color-hover: var(--cd-primary-color);
   --cd-navbar-text-color: var(--cd-content-background-color);
   --cd-navbar-link-color: var(--cd-navbar-text-color);
@@ -265,12 +265,8 @@ a:active {
 }
 
 .navbar .navbar-brand {
-  color: var(--cd-navbar-brand-color-hover) !important;
-  font-size: 2rem;
-}
-
-.navbar .navbar-brand::first-letter {
   color: var(--cd-navbar-brand-color) !important;
+  font-size: 2rem;
 }
 
 .navbar .navbar-brand:hover,
