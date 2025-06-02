@@ -652,7 +652,7 @@ body {
 #main-container {
   min-height: calc(100vh - 105px);
   padding: 1rem;
-  -ml-flex: 1 1 auto !important;
+  -ms-flex: 1 1 auto !important;
   flex: 1 1 auto !important;
 }
 
