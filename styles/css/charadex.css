@@ -274,6 +274,10 @@ a:active {
   color: var(--cd-navbar-brand-color-hover) !important;
 }
 
+.navbar .navbar-brand strong {
+  color: var(--cd-navbar-brand-color-hover) !important;
+}
+
 .navbar .navbar-nav .nav-link {
   color: var(--cd-navbar-link-color) !important;
 }
