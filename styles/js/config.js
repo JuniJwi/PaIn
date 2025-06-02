@@ -16,7 +16,7 @@ let charadex = {};
 /* ==================================================================== */
 charadex.site = {
   title: "Paradigm Infinite",
-  url: "https://junijwi.github.io/ParadigmInfinite/",
+  url: "https://junijwi.github.io/PaIn/",
   description: `Paradigm Infinite (PaIn) is a hub-style, existential horror roleplay group in a modern day setting.`
 }
 
