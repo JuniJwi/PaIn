@@ -771,7 +771,7 @@ p:last-child {
 @media (min-width: 768px) {
   .cd-hero-title {
     letter-spacing: 2px;
-    font-size: 5rem;
+    font-size: 4rem;
   }
 }
 
