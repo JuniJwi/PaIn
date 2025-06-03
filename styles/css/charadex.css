@@ -764,7 +764,6 @@ p:last-child {
   font-family: var(--cd-header-font-family);
   text-transform: uppercase;
   display: flex;
-  padding: 1.5rem;
   font-weight: 800;
   font-size: 2.5rem;
 }
@@ -772,7 +771,7 @@ p:last-child {
 @media (min-width: 768px) {
   .cd-hero-title {
     letter-spacing: 2px;
-    font-size: 5rem;
+    font-size: 4rem;
   }
 }
 
