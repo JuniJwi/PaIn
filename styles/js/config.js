@@ -164,7 +164,7 @@ charadex.page.prompts = {
 
   sheetPage: charadex.sheet.pages.prompts,
   sitePage: 'prompts',
-  dexSelector: 'charadex',
+  dexSelector: 'prompts',
   profileProperty: 'title',
 
   sort: {
@@ -510,18 +510,12 @@ charadex.page.index = {
   prompts: {
     ... charadex.page.prompts,
     dexSelector: 'prompt',
-    amount: 3,
-  },
-
-  staff: {
-    ... charadex.page.staff,
-    dexSelector: 'staff',
-    amount: 6,
+    amount: 2,
   },
 
   designs: {
     ... charadex.page.masterlist,
-    dexSelector: 'design',
+    dexSelector: 'charadex',
     amount: 4,
   }
 
