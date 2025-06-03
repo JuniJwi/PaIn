@@ -5,12 +5,12 @@
 
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <base href="/PaIn/">
+  
 
   <!-- ----------------------------------------------------------------- -->
   <!-- About Your Site                                                   -->
   <!-- ----------------------------------------------------------------- -->
-  <link rel="shortcut icon" type="image/png" href="assets/favicon.png" />
+  <link rel="shortcut icon" type="image/png" href="{{ '/assets/favicon.png' | relative_url }}" />
   <title>Charadex Items</title>
   <meta name="title" content="Charadex Items" />
   <meta name="type" content="website" />
@@ -42,7 +42,7 @@
   <!-- ----------------------------------------------------------------- -->
 
   <!-- Custom CSS -->
-  <link rel="stylesheet" type="text/css" href="styles/css/charadex.css">
+  <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/styles/css/charadex.css">
 
   <!-- Google Font -->
   <link href="https://fonts.googleapis.com/css?family=Roboto Mono:400|Rajdhani:500" rel="stylesheet">
@@ -56,7 +56,7 @@
   <!-- --------------------------------------------------------------------
   <-- Header
   <-------------------------------------------------------------------- -->
-  <div class="load-html" id="header" data-source="includes/header.html"></div>
+  <div class="load-html" id="header" data-source="{{ site.baseurl }}/includes/header.html"></div>
 
 
   <!-- --------------------------------------------------------------------
@@ -135,7 +135,7 @@
             <div class="col-6 px-1">
               <a id="entryPrev" href=""><i class="fas fa-chevron-left me-2"></i><b><span></span></b></a>
             </div>
-            <div class="col-6 px-1 text-right order-md-1">
+            <div class="col-6 px-1 text-end order-md-1">
               <a id="entryNext" href=""><b><span></span></b><i class="fas fa-chevron-right ms-2"></i></a>
             </div>
           </div>
@@ -165,7 +165,7 @@
   <!-- --------------------------------------------------------------------
   <-- Footer
   <-------------------------------------------------------------------- -->
-  <div class="load-html" id="footer" data-source="includes/footer.html"></div>
+  <div class="load-html" id="footer" data-source="{{ site.baseurl }}/includes/footer.html"></div>
 
   <!-- --------------------------------------------------------------------
   <-- Repeat Items
@@ -183,7 +183,7 @@
         <div class="card-header p-4">
           <div class="row no-gutters align-items-end m-n1">
             <div class="col"><h5 class="mb-0 pe-2"><a class="profilelink profileid"></a></h5></div>
-            <div class="col-auto text-right raritybadge"></div>
+            <div class="col-auto text-end raritybadge"></div>
           </div>
         </div>
         
@@ -210,7 +210,7 @@
         <div class="card-header px-md-5 px-4 py-4">
           <div class="row no-gutters align-items-end m-n1">
             <div class="col"><h3 class="mb-0 pe-2"><a class="profilelink profileid"></a></h3></div>
-            <div class="col-auto text-right raritybadge"></div>
+            <div class="col-auto text-end raritybadge"></div>
           </div>
         </div>
 
@@ -285,8 +285,8 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/js/bootstrap-select.min.js"></script>
 
   <!-- Charadex Script -->
-  <script src="styles/js/pages/base.js" type="module"></script>
-  <script src="styles/js/pages/items.js" type="module"></script>
+  <script src="{{ site.baseurl }}/styles/js/pages/base.js" type="module"></script>
+  <script src="{{ site.baseurl }}/styles/js/pages/items.js" type="module"></script>
 
 
 </body>

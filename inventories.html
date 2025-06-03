@@ -5,12 +5,12 @@
 
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <base href="/PaIn/">
+  
 
   <!-- ----------------------------------------------------------------- -->
   <!-- About Your Site                                                   -->
   <!-- ----------------------------------------------------------------- -->
-  <link rel="shortcut icon" type="image/png" href="assets/favicon.png" />
+  <link rel="shortcut icon" type="image/png" href="{{ '/assets/favicon.png' | relative_url }}" />
   <title>Charadex Inventories</title>
   <meta name="title" content="Charadex Inventories" />
   <meta name="type" content="website" />
@@ -42,7 +42,7 @@
   <!-- ----------------------------------------------------------------- -->
 
   <!-- Custom CSS -->
-  <link rel="stylesheet" type="text/css" href="styles/css/charadex.css">
+  <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/styles/css/charadex.css">
 
   <!-- Google Font -->
   <link href="https://fonts.googleapis.com/css?family=Roboto Mono:400|Rajdhani:500" rel="stylesheet">
@@ -55,7 +55,7 @@
   <!-- --------------------------------------------------------------------
   <-- Header
   <-------------------------------------------------------------------- -->
-  <div class="load-html" data-source="includes/header.html"></div>
+  <div class="load-html" data-source="{{ site.baseurl }}/includes/header.html"></div>
 
   <!-- --------------------------------------------------------------------
   <-- Main List
@@ -136,7 +136,7 @@
             <div class="col-6 px-1">
               <a id="entryPrev" href=""><i class="fas fa-chevron-left me-2"></i><b><span></span></b></a>
             </div>
-            <div class="col-6 px-1 text-right order-md-1">
+            <div class="col-6 px-1 text-end order-md-1">
               <a id="entryNext" href=""><b><span></span></b><i class="fas fa-chevron-right ms-2"></i></a>
             </div>
           </div>
@@ -171,7 +171,7 @@
     <-- Footer
     <-------------------------------------------------------------------- -->
 
-  <div class="load-html" data-source="includes/footer.html"></div>
+  <div class="load-html" data-source="{{ site.baseurl }}/includes/footer.html"></div>
 
 
 
@@ -203,19 +203,19 @@
         <!-- ----------------------------------------------------------- -->
         <ul class="nav row no-gutters m-n1 py-4 px-md-5 px-4" id="profile-tabs" role="tablist">
           <li class="col p-1 nav-item" role="presentation">
-            <a class="nav-link w-100 btn btn-primary active" id="inventory-tab" data-toggle="tab" href=".#inventory" 
+            <a class="nav-link w-100 btn btn-primary active" id="inventory-tab" data-toggle="tab" href="#inventory" 
             aria-controls="inventory" aria-selected="true">
               Inventory
             </a>
           </li>
           <li class="col p-1 nav-item" role="presentation">
-            <a class="nav-link w-100 btn btn-primary" id="designs-tab" data-toggle="tab" href=".#designs" 
+            <a class="nav-link w-100 btn btn-primary" id="designs-tab" data-toggle="tab" href="#designs" 
             aria-controls="designs" aria-selected="false">
               Designs
             </a>
           </li>
           <li class="col p-1 nav-item" role="presentation">
-            <a class="nav-link w-100 btn btn-primary" id="logs-tab" data-toggle="tab" href=".#logs" 
+            <a class="nav-link w-100 btn btn-primary" id="logs-tab" data-toggle="tab" href="#logs" 
             aria-controls="logs" aria-selected="false">
               Logs
             </a>
@@ -238,7 +238,7 @@
                 <!-- --------------------------------------------------------------- -->
                 <h4 class="text-primary d-flex justify-content-between align-items-center mb-0">
                   Inventory
-                  <a href=".#inventory-filter-toggle" data-toggle="collapse"><i class="fas fa-filter fa-fw"></i></a>
+                  <a href="#inventory-filter-toggle" data-toggle="collapse"><i class="fas fa-filter fa-fw"></i></a>
                 </h4>
 
                 <div class="collapse" id="inventory-filter-toggle">
@@ -307,7 +307,7 @@
                   </div>
 
                   <!-- Quantity -->
-                  <div class="card-footer bg-faded text-right py-1">
+                  <div class="card-footer bg-faded text-end py-1">
                     <small>x<span class="quantity"></span></small>
                   </div>
 
@@ -332,7 +332,7 @@
                 <!-- --------------------------------------------------------------- -->
                 <h4 class="text-primary d-flex justify-content-between align-items-center mb-0">
                   Owned Designs
-                  <a href=".#designs-filter-toggle" data-toggle="collapse"><i class="fas fa-filter fa-fw"></i></a>
+                  <a href="#designs-filter-toggle" data-toggle="collapse"><i class="fas fa-filter fa-fw"></i></a>
                 </h4>
 
                 <div class="collapse" id="designs-filter-toggle">
@@ -388,7 +388,7 @@
                     <div class="col-6 px-1">
                       <a id="entryPrev" href=""><i class="fas fa-chevron-left me-2"></i><b><span></span></b></a>
                     </div>
-                    <div class="col-6 px-1 text-right order-md-1">
+                    <div class="col-6 px-1 text-end order-md-1">
                       <a id="entryNext" href=""><b><span></span></b><i class="fas fa-chevron-right ms-2"></i></a>
                     </div>
                   </div>
@@ -495,8 +495,8 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/js/bootstrap-select.min.js"></script>
 
   <!-- Charadex Script -->
-  <script src="styles/js/pages/base.js" type="module"></script>
-  <script src="styles/js/pages/inventory.js" type="module"></script>
+  <script src="{{ site.baseurl }}/styles/js/pages/base.js" type="module"></script>
+  <script src="{{ site.baseurl }}/styles/js/pages/inventory.js" type="module"></script>
 
 
 </body>
