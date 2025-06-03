@@ -62,8 +62,8 @@ body {
   /* ============================================================= */
   /* Main Fonts
   ================================================================ */
-  --cd-body-font-family: 'Roboto Mono', sans-serif;
-  --cd-header-font-family: 'Rajdhani', sans-serif;
+  --cd-body-font-family: 'Rajdhani', sans-serif;
+  --cd-header-font-family: 'Roboto Mono', sans-serif;
   
   /* ============================================================= */
   /* Rarities
@@ -227,7 +227,7 @@ body {
   /* Global Text */
   color: var(--cd-body-text-color);
   font-family: var(--cd-body-font-family);
-  font-size: 10pt;
+  font-size: 12pt;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
