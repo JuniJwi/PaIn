@@ -48,6 +48,9 @@ charadex.tools = {
         console.log("Loaded HTML file:", data);
       });
     });
+    if ($(".load-html").length) {
+      loadIncludedFiles(); // a bit recursive, but... lets us include includes!
+    }
   },
 
   // Load Page

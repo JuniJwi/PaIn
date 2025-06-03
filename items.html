@@ -49,7 +49,7 @@
 
 </head>
 
-<body id="charadex-body">
+<body id="item-body">
 
 
   <!-- --------------------------------------------------------------------
@@ -62,7 +62,7 @@
   <-- Main List
   <-------------------------------------------------------------------- -->
   <div class="container" id="main-container">
-    <div id="charadex-gallery">
+    <div id="item-gallery">
 
       <!-- Top Card Container
       <!-- ----------------------------------------------------------------- -->
@@ -74,12 +74,12 @@
 
         <!-- Faux Folders
         <!-- --------------------------------------------------------------- -->
-        <div style="display:none;" id="charadex-folder-container">
+        <div style="display:none;" id="item-folder-container">
           <hr>
-          <div class="row no-gutters m-n1" id="charadex-folders"></div>
+          <div class="row no-gutters m-n1" id="item-folders"></div>
           <!-- Buttons -->
           <div style="display:none;">
-            <div class="col-lg-3 col-md-4 col-sm-6 p-1" id="charadex-folder">
+            <div class="col-lg-3 col-md-4 col-sm-6 p-1" id="item-folder">
               <a class="btn btn-primary d-block" href=""></a>
             </div>
           </div>
@@ -87,12 +87,12 @@
 
         <!-- Filters
         <!-- --------------------------------------------------------------- -->
-        <div style="display:none;" id="charadex-filter-container">
+        <div style="display:none;" id="item-filter-container">
           <hr>
-          <div class="row no-gutters m-n1" id="charadex-filters"></div>
+          <div class="row no-gutters m-n1" id="item-filters"></div>
           <!-- Filters -->
           <div style="display: none;">
-            <div class="col-md-4 col-12 p-1" id="charadex-filter">
+            <div class="col-md-4 col-12 p-1" id="item-filter">
               <label class="px-2"></label>
               <select class="form-control" multiple></select>
             </div>
@@ -101,34 +101,34 @@
 
         <!-- Search
         <!-- --------------------------------------------------------------- -->
-        <div style="display:none;" id="charadex-search-container">
+        <div style="display:none;" id="item-search-container">
           <hr>
           <div class="row no-gutters m-n1">
             <!-- Search Filter -->
             <div class="col-md-4 col-6 p-1" style="display: none;">
-              <select class="form-control" id="charadex-search-filter"></select>
+              <select class="form-control" id="item-search-filter"></select>
             </div>
             <!-- Search Bar -->
             <div class="col d-flex p-1">
-              <input class="form-control search" type="search" placeholder="Search" id="charadex-search">
+              <input class="form-control search" type="search" placeholder="Search" id="item-search">
             </div>
           </div>
         </div>
 
         <!-- Pagination
         <!-- --------------------------------------------------------------- -->
-        <div style="display: none;" class="charadex-pagination-container">
+        <div style="display: none;" class="item-pagination-container">
           <hr class="mb-4 mt-4">
           <div class="nav d-flex justify-content-center mb-n4">
             <div class="btn-prev page-item"><a class="page-link"><i class="fa fa-chevron-left"></i></a></div>
-            <ul class="pagination charadex-pagination charadex-pagination-top justify-content-center m-0"></ul>
+            <ul class="pagination item-pagination item-pagination-top justify-content-center m-0"></ul>
             <div class="btn-next page-item"><a class="page-link"><i class="fa fa-chevron-right"></i></a></div>
           </div>
         </div>
 
         <!-- Prev & Next Topbar
         <!-- --------------------------------------------------------------- -->
-        <div style="display: none;" id="charadex-prevnext-container">
+        <div style="display: none;" id="item-prevnext-container">
           <hr>
           <div class="row no-gutters px-2 text-uppercase">
             <div class="col-6 px-1">
@@ -144,15 +144,15 @@
 
       <!-- List Items Render Here
       <!-- --------------------------------------------------------------- -->
-      <div class="row no-gutters charadex-list softload m-n2"></div>
+      <div class="row no-gutters item-list softload m-n2"></div>
 
       <!-- Pagination
       <!-- --------------------------------------------------------------- -->
-      <div style="display: none;" class="charadex-pagination-container">
+      <div style="display: none;" class="item-pagination-container">
         <div class="card px-3 py-1 mt-4">
           <div class="nav d-flex justify-content-center">
             <div class="btn-prev page-item"><a class="page-link"><i class="fa fa-chevron-left"></i></a></div>
-            <ul class="pagination charadex-pagination charadex-pagination-bottom justify-content-center m-0"></ul>
+            <ul class="pagination item-pagination item-pagination-bottom justify-content-center m-0"></ul>
             <div class="btn-next page-item"><a class="page-link"><i class="fa fa-chevron-right"></i></a></div>
           </div>
         </div>
@@ -171,103 +171,8 @@
   <-- Do not remove 'display:none;'
   <-------------------------------------------------------------------- -->
   <div style="display:none;">
-
-
-    <!-- Gallery Items
-    <!-- --------------------------------------------------------------- -->
-    <div class="col-md-6 p-2" id="charadex-gallery-item">
-      <div class="card h-100">
-
-        <!-- Header -->
-        <div class="card-header p-4">
-          <div class="row no-gutters align-items-end m-n1">
-            <div class="col"><h5 class="mb-0 pe-2"><a class="profilelink profileid"></a></h5></div>
-            <div class="col-auto text-end raritybadge"></div>
-          </div>
-        </div>
-        
-        <!-- Body -->
-        <div class="card-body p-md-4 p-3 d-flex flex-fill align-items-center">
-          <div class="row no-gutters m-n2">
-            <div class="col-md-4 p-2"><img class="image img-fluid m-auto" src="" ></div>
-            <div class="col-md-8 p-2">
-              <div class="description"></div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-
-
-    <!-- Gallery Profile
-    <!-- --------------------------------------------------------------- -->
-    <div class="col-12 p-2" id="charadex-profile">
-      <div class="card">
-
-        <!-- Header -->
-        <div class="card-header px-md-5 px-4 py-4">
-          <div class="row no-gutters align-items-end m-n1">
-            <div class="col"><h3 class="mb-0 pe-2"><a class="profilelink profileid"></a></h3></div>
-            <div class="col-auto text-end raritybadge"></div>
-          </div>
-        </div>
-
-        <!-- Main Info
-        <!-- ----------------------------------------------------------- -->
-        <div class="p-md-5 p-4">
-          <div class="row no-gutters m-n2">
-
-            <!-- Image -->
-            <div class="col-md-4 d-flex justify-content-center align-items-start text-center p-2">
-              <img class="image img-fluid" src="">
-            </div>
-
-            <div class="col-md-8 p-2">
-              <div class="card bg-faded p-4 h-100">
-
-                <!-- Item -->
-                <div class="d-flex no-gutters mb-2">
-                  <b class="text-muted col-md-5 col-6">Item</b>
-                  <span class="item"></span>
-                </div>
-  
-                <!-- Item -->
-                <div class="d-flex no-gutters mb-2">
-                  <b class="text-muted col-md-5 col-6">Type</b>
-                  <span class="type"></span>
-                </div>
-  
-                <!-- Item -->
-                <div class="d-flex no-gutters mb-2">
-                  <b class="text-muted col-md-5 col-6">Rarity</b>
-                  <span class="rarity"></span>
-                </div>
-  
-                <!-- Item -->
-                <div class="d-flex no-gutters">
-                  <b class="text-muted col-md-5 col-6">Price</b>
-                  <span>$<span class="price"></span></span>
-                </div>
-
-                <hr>
-                
-                <!-- Item -->
-                <div>
-                  <b class="text-muted">Description</b>
-                  <div class="px-4 cd-text-pre description"></div>
-                </div>
-
-              </div>
-            </div>
-
-          </div>
-
-        </div>
-      </div>
-    </div>
-
-
+    <div class="load-html" data-source="/PaIn/includes/item-thumb.html"></div>
+    <div class="load-html" data-source="/PaIn/includes/item-card.html"></div>
   </div>
 
   <!-- ----------------------------------------------------------------- -->

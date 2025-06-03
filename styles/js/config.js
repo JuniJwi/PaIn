@@ -66,7 +66,7 @@ charadex.page.items = {
 
   sheetPage: charadex.sheet.pages.items,
   sitePage: 'items',
-  dexSelector: 'charadex',
+  dexSelector: 'item',
   profileProperty: 'item',
 
   sort: {
@@ -164,7 +164,7 @@ charadex.page.prompts = {
 
   sheetPage: charadex.sheet.pages.prompts,
   sitePage: 'prompts',
-  dexSelector: 'prompts',
+  dexSelector: 'prompt',
   profileProperty: 'title',
 
   sort: {
@@ -387,7 +387,7 @@ charadex.page.inventory = {
   // Dex Set Up
   sheetPage: charadex.sheet.pages.inventory,
   sitePage: 'inventories',
-  dexSelector: 'charadex',
+  dexSelector: 'player',
   profileProperty: 'username',
 
   // Dex Options
@@ -458,7 +458,7 @@ charadex.page.inventory = {
       sitePage: 'masterlist',
       primaryProperty: 'username',
       relatedProperty: 'owner',
-      dexSelector: 'designs',
+      dexSelector: 'charadex',
       profileProperty: 'design',
       profileToggle: false,
 
@@ -472,7 +472,7 @@ charadex.page.inventory = {
 
     sheetPage: charadex.sheet.pages.items,
     sitePage: 'items',
-    dexSelector: 'inventory',
+    dexSelector: 'item',
     profileProperty: 'item',
     profileToggle: false,
 
