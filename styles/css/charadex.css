@@ -725,6 +725,7 @@ p:last-child {
 }
 
 .cd-gallery-card {
+  background-color: var(--cd-faded-background-color);
   min-height: calc(175px + 2.5rem);
 }
 
