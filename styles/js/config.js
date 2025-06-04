@@ -34,7 +34,7 @@ charadex.sheet = {
     inventory:     "inventory",
     inventoryLog:  "inventory log",
     items:         "items",
-    traits:        "traits",
+    domains:       "domains",
     prompts:       "prompts",
     faq:           "faq",
     staff:         "mods",
@@ -42,12 +42,12 @@ charadex.sheet = {
 
   options: {
 
-    designTypes: ['All', 'Official Design', 'Guest Design', 'MYO Slot', 'MYO Design'],
-    statuses: ['All', 'Resell', 'Trade', 'Gift', 'Voided', 'For Sale', 'Purchased'],
-    rarity: ['All', 'Common', 'Uncommon', 'Rare', 'Very Rare', 'Legendary'],
-    species: ['All', 'Dog', 'Cat', 'Bunny'],
-    itemTypes: ['All', 'Currency', 'MYO Slot', 'Pet', 'Trait', 'Misc'],
-    traitTypes: ['All', 'Ears', 'Eyes', 'Body', 'Limbs', 'Tails', 'Misc', 'Mutations']
+    designTypes: ['All', 'Story Character', 'Player Character', 'Side Character'],
+    statuses: ['All', 'Active', 'Voided', 'Retired', 'Dead', 'WIP'],
+    class: ['All', 'Safe', 'Euclid', 'Keter'],
+    departments: ['All', 'Department of Internal Esoterics', 'Applied Sciences Sector', 'Office of Oversight, Management, and Faculties'],
+    itemTypes: ['All', 'Currency', 'Voucher', 'Awards', 'Gatcha', 'Misc'],
+    domainTypes: ['All', 'Diluvial', 'Terminal', 'Lithic', 'Detrital']
 
   }
 
@@ -86,7 +86,7 @@ charadex.page.items = {
     toggle: true,
     parameters: {
       'Type': charadex.sheet.options.itemTypes,
-      'Rarity': charadex.sheet.options.rarity,
+      'Class': charadex.sheet.options.class,
     }
   },
 
@@ -99,7 +99,7 @@ charadex.page.items = {
   search: {
     toggle: true,
     filterToggle: true,
-    parameters: ['All', 'Item', 'Rarity']
+    parameters: ['All', 'Item', 'Class']
   },
 
   prevNext: {
@@ -109,14 +109,14 @@ charadex.page.items = {
 };
 
 
-/* Traits
+/* Domains
 /* --------------------------------------------------------------- */
-charadex.page.traits = {
+charadex.page.domains = {
 
-  sheetPage: charadex.sheet.pages.traits,
-  sitePage: 'traits',
+  sheetPage: charadex.sheet.pages.domains,
+  sitePage: 'domains',
   dexSelector: 'charadex',
-  profileProperty: 'trait',
+  profileProperty: 'domain',
 
   sort: {
     toggle: true,
@@ -134,21 +134,21 @@ charadex.page.traits = {
   filters: {
     toggle: true,
     parameters: {
-      'Type': charadex.sheet.options.traitTypes,
-      'Rarity': charadex.sheet.options.rarity,
+      'Type': charadex.sheet.options.domainTypes,
+      'Class': charadex.sheet.options.class,
     }
   },
 
   fauxFolder: {
     toggle: true,
     folderProperty: 'Type',
-    parameters: charadex.sheet.options.traitTypes,
+    parameters: charadex.sheet.options.domainTypes,
   },
 
   search: {
     toggle: true,
     filterToggle: true,
-    parameters: ['All', 'Trait', 'Rarity']
+    parameters: ['All', 'Domain', 'Class']
   },
 
   prevNext: {
@@ -330,20 +330,20 @@ charadex.page.masterlist = {
     parameters: {
       'Design Type': charadex.sheet.options.designTypes,
       'Status': charadex.sheet.options.statuses,
-      'Rarity': charadex.sheet.options.rarity,
+      'Class': charadex.sheet.options.class,
     }
   },
 
   fauxFolder: {
     toggle: true,
-    folderProperty: 'Species',
-    parameters: charadex.sheet.options.species,
+    folderProperty: 'Departments',
+    parameters: charadex.sheet.options.departments,
   },
 
   search: {
     toggle: true,
     filterToggle: true,
-    parameters: ['All', 'ID', 'Design', 'Owner', 'Designer', 'Artist', 'Traits']
+    parameters: ['All', 'ID', 'Design', 'Player', 'Domains']
   },
 
   prevNext: {
@@ -457,7 +457,7 @@ charadex.page.inventory = {
       sheetPage: charadex.sheet.pages.masterlist,
       sitePage: 'masterlist',
       primaryProperty: 'username',
-      relatedProperty: 'owner',
+      relatedProperty: 'player',
       dexSelector: 'charadex',
       profileProperty: 'design',
       profileToggle: false,
@@ -494,7 +494,7 @@ charadex.page.inventory = {
       toggle: true,
       parameters: {
         'Type': charadex.sheet.options.itemTypes,
-        'Rarity': charadex.sheet.options.rarity,
+        'Class': charadex.sheet.options.class,
       }
     },
 
