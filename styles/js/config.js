@@ -45,7 +45,7 @@ charadex.sheet = {
     designTypes: ['All', 'Story Character', 'Player Character', 'Side Character'],
     statuses: ['All', 'Active', 'Voided', 'Retired', 'Dead', 'WIP'],
     class: ['All', 'Safe', 'Euclid', 'Keter'],
-    departments: ['All', 'Department of Internal Esoterics', 'Applied Sciences Sector', 'Office of Oversight, Management, and Faculties'],
+    departments: ['All', 'D.I.E.', 'A.S.S.', 'O.O.M.F.'],
     itemTypes: ['All', 'Currency', 'Voucher', 'Awards', 'Gatcha', 'Misc'],
     domainTypes: ['All', 'Diluvial', 'Terminal', 'Lithic', 'Detrital']
 
@@ -343,7 +343,7 @@ charadex.page.masterlist = {
   search: {
     toggle: true,
     filterToggle: true,
-    parameters: ['All', 'ID', 'Design', 'Player', 'Domains']
+    parameters: ['All', 'ID', 'Name', 'Player', 'Domains']
   },
 
   prevNext: {
