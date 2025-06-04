@@ -662,7 +662,7 @@ ol li::marker {
 
 .softload.active {
   opacity: 1;
-  transition: opacity 1s ease;
+  transition: opacity .5s ease;
 }
 
 /* Fades container in on load so its not as jarring */
