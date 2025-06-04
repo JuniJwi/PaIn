@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
         // Set the player url
         let pageUrl = charadex.url.getPageUrl(charadex.page.inventory.sitePage);
-        $('#playerlink').attr('href', charadex.url.addUrlParameters(pageUrl, { profile: profile.player }));
+        $('.playerlink').attr('href', charadex.url.addUrlParameters(pageUrl, { profile: profile.player }));
 
       }
 
