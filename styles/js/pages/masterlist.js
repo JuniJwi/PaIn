@@ -31,6 +31,7 @@ document.addEventListener("DOMContentLoaded", async () => {
             listData.profileArray[0].inventory,
             charadex.page.masterlist.relatedData['inventory']
           );
+          console.log(player);
         }
 
         // Set the player url
