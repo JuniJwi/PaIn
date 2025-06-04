@@ -350,7 +350,7 @@ charadex.listFeatures.prevNextLink = function (pageUrl, galleryArray, profileArr
     const element = $(selector);
     if (profile) {
       element.attr('href', charadex.url.addUrlParameters(pageUrl, { profile: profile.profileid }));
-      element.find('span').text(profile.name);
+      element.find('span').text(profile.profileid);
       element.show();
     } else {
       element.hide();
