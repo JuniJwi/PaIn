@@ -31,12 +31,11 @@ document.addEventListener("DOMContentLoaded", async () => {
             listData.profileArray[0].inventory,
             charadex.page.masterlist.relatedData['inventory']
           );
-          console.log(player);
         }
 
         // Set the player url
         let pageUrl = charadex.url.getPageUrl(charadex.page.inventory.sitePage);
-        $('.playerlink').attr('href', charadex.url.addUrlParameters(pageUrl, { profile: profile.player }));
+        $('.playerlink').attr('href', charadex.url.addUrlParameters(pageUrl, { profile: listData.profileArray[0].player }));
 
       }
 
