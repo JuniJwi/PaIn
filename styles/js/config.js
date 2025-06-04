@@ -358,7 +358,7 @@ charadex.page.masterlist = {
       primaryProperty: 'id',
       relatedProperty: 'id',
       dexSelector: 'log',
-      profileProperty: 'design',
+      profileProperty: 'name',
       profileToggle: false,
 
       sort: {
@@ -373,6 +373,18 @@ charadex.page.masterlist = {
         bottomToggle: false,
         amount: 12,
       },
+
+    },
+
+    
+    [charadex.sheet.pages.inventory]: {
+
+      sheetPage: charadex.sheet.pages.inventory,
+      sitePage: 'inventory',
+      primaryProperty: 'username',
+      relatedProperty: 'player',
+      profileProperty: 'username',
+      profileToggle: false,
 
     }
 
@@ -459,7 +471,7 @@ charadex.page.inventory = {
       primaryProperty: 'username',
       relatedProperty: 'player',
       dexSelector: 'charadex',
-      profileProperty: 'design',
+      profileProperty: 'name',
       profileToggle: false,
 
     }
