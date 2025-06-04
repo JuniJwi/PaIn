@@ -376,18 +376,6 @@ charadex.page.masterlist = {
 
     },
 
-    
-    [charadex.sheet.pages.inventory]: {
-
-      sheetPage: charadex.sheet.pages.inventory,
-      sitePage: 'inventory',
-      primaryProperty: 'player',
-      relatedProperty: 'username',
-      profileProperty: 'username',
-      profileToggle: true,
-
-    }
-
   }
 
 };
