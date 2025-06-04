@@ -25,8 +25,15 @@ document.addEventListener("DOMContentLoaded", async () => {
           );
         }
 
+        // Set the player info
+        if (charadex.tools.checkArray(listData.profileArray[0].inventory)) {
+          let player = await charadex.initialize.page(
+            listData.profileArray[0].inventory,
+            charadex.page.masterlist.relatedData['inventory']
+          );
+        }
+
         // Set the player url
-        console.log(listData);
         let pageUrl = charadex.url.getPageUrl(charadex.page.inventory.sitePage);
         $('.playerlink').attr('href', charadex.url.addUrlParameters(pageUrl, { profile: profile.player }));
 
