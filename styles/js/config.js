@@ -45,7 +45,7 @@ charadex.sheet = {
     designTypes: ['All', 'Story Character', 'Player Character', 'Side Character'],
     statuses: ['All', 'Active', 'Voided', 'Retired', 'Dead', 'WIP'],
     class: ['All', 'Safe', 'Euclid', 'Keter'],
-    departments: ['All', 'D.I.E.', 'A.S.S.', 'O.O.M.F.'],
+    departments: ['All', 'DIE', 'ASS', 'OOMF'],
     itemTypes: ['All', 'Currency', 'Voucher', 'Awards', 'Gatcha', 'Misc'],
     domainTypes: ['All', 'Diluvial', 'Terminal', 'Lithic', 'Detrital']
 
@@ -310,7 +310,7 @@ charadex.page.masterlist = {
   sheetPage: charadex.sheet.pages.masterlist,
   sitePage: 'masterlist',
   dexSelector: 'charadex',
-  profileProperty: 'design',
+  profileProperty: 'name',
 
   sort: {
     toggle: true,
