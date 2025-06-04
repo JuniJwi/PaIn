@@ -45,7 +45,7 @@ charadex.tools = {
       const target = $(this);
       $.get(this.dataset.source, function (data) {
         target.replaceWith(data);
-        console.log("Loaded HTML file:", data.substring(0, 10));
+        console.log("Loaded HTML file:", target);
       });
     });
   },
