@@ -384,7 +384,7 @@ charadex.page.masterlist = {
       primaryProperty: 'player',
       relatedProperty: 'username',
       profileProperty: 'username',
-      profileToggle: false,
+      profileToggle: true,
 
     }
 
