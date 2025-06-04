@@ -381,8 +381,8 @@ charadex.page.masterlist = {
 
       sheetPage: charadex.sheet.pages.inventory,
       sitePage: 'inventory',
-      primaryProperty: 'username',
-      relatedProperty: 'player',
+      primaryProperty: 'player',
+      relatedProperty: 'username',
       profileProperty: 'username',
       profileToggle: false,
 
