@@ -227,7 +227,7 @@ body {
   /* Global Text */
   color: var(--cd-body-text-color);
   font-family: var(--cd-body-font-family);
-  font-size: 12pt;
+  font-size: 11pt;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
