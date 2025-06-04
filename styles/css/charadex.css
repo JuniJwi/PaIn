@@ -487,6 +487,13 @@ a:active {
 
 
 /* ============================================================= */
+/* Text
+/* ============================================================= */
+.text-justify {
+  text-align: justify;
+}
+
+/* ============================================================= */
 /* Buttons & Badges
 /* ============================================================= */
 
@@ -632,9 +639,23 @@ ul {
   list-style-type: ">> ";
 }
 
-li::marker {
+ul li {
+  margin-bottom: .5em;
+}
+
+ul li::marker {
   color: var(--cd-primary-color);
 }
+
+ol li {
+  margin-bottom: .5em;
+  padding-left: .5em;
+}
+
+ol li::marker {
+  color: var(--cd-faded-text-color);
+}
+
 
 /* ============================================================= */
 /* Loading
