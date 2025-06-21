@@ -38,9 +38,13 @@ charadex.initialize.page = async (dataArr, config, dataCallback, listCallback, c
     if (folders) folders(entry, config.fauxFolder.folderProperty); // If folders, add folder info
     if (entry.class) entry.classbadge = `<span class="badge badge-${charadex.tools.scrub(entry.class)}">${entry.class}</span>`; // Adds a class badge
 
+    console.log("Data:", charadexData);
     // Convert markdown to HTML, if we need to
     if (config.markdownColumns) {
+      console.log("Config markdownColumns", config.markdownColumns);
       for (let column in config.markdownColumns) {
+        console.log("Entry", entry);
+        console.log("Column:", column);
         if (entry[column]) entry[column] = charadex.manageData.convertMarkdown(entry[column]);
       }
     }
