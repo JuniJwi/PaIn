@@ -29,6 +29,9 @@ document.addEventListener("DOMContentLoaded", async () => {
         let pageUrl = charadex.url.getPageUrl(charadex.page.inventory.sitePage);
         $('.playerlink').attr('href', charadex.url.addUrlParameters(pageUrl, { profile: listData.profileArray[0].player }));
 
+        // Convert markdown
+        listData.profileArray[0].notes = charadex.manageData.convertMarkdown(listData.profileArray[0].notes);
+
       }
 
     }
