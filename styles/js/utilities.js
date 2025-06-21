@@ -2,7 +2,7 @@
 /* Import Charadex
 ======================================================================= */
 import { charadex } from './config.js';
-import showdown from './packages/showdown.min.js';
+import { showdown } from "https://cdn.jsdelivr.net/npm/showdown@2.1.0/dist/showdown.min.js";
 
 
 /* ==================================================================== */
