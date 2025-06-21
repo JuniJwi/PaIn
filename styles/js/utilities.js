@@ -402,7 +402,6 @@ charadex.importSheet = async (sheetPage, sheetId = charadex.sheet.id) => {
         info.c[ind].f : info.c[ind].v != null ? 
         info.c[ind].v : "" : "";
     });
-    console.log("Scrubbed row:", row);
     scrubbedData.push(row);
   };
 
