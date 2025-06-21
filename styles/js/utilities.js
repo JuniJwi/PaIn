@@ -348,7 +348,7 @@ charadex.manageData = {
       strikethrough: true,
       tasklists: true,
       simplifiedAutoLink: true,
-      parseImgDimension: true,
+      parseImgDimensions: true,
       backslashEscapesHTMLTags: true ,
       simpleLineBreaks: true,
     });
@@ -402,7 +402,8 @@ charadex.importSheet = async (sheetPage, sheetId = charadex.sheet.id) => {
         info.c[ind].f : info.c[ind].v != null ? 
         info.c[ind].v : "" : "";
     });
-    row = charadex.manageData.convertMarkdown(row); // convert any potential markdown into html
+    print(row);
+    // row = charadex.manageData.convertMarkdown(row); // convert any potential markdown into html
     scrubbedData.push(row);
   };
 
