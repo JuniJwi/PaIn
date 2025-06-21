@@ -402,7 +402,7 @@ charadex.importSheet = async (sheetPage, sheetId = charadex.sheet.id) => {
         info.c[ind].f : info.c[ind].v != null ? 
         info.c[ind].v : "" : "";
     });
-    row = convertMarkdown(row); // convert any potential markdown into html
+    row = charadex.manageData.convertMarkdown(row); // convert any potential markdown into html
     scrubbedData.push(row);
   };
 
