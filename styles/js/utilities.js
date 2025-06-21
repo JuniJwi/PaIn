@@ -397,12 +397,13 @@ charadex.importSheet = async (sheetPage, sheetId = charadex.sheet.id) => {
     const row = {};
     const isBoolean = val => 'boolean' === typeof val;
     col.forEach((ele, ind) => {
+        console.log("info.c[ind]:", info.c[ind]);
         row[ele] = info.c[ind] != null ? 
         info.c[ind].f != null && !isBoolean(info.c[ind].v) ? 
         info.c[ind].f : info.c[ind].v != null ? 
         info.c[ind].v : "" : "";
     });
-    print(row);
+    console.log("Scrubbed row:", row);
     // row = charadex.manageData.convertMarkdown(row); // convert any potential markdown into html
     scrubbedData.push(row);
   };
