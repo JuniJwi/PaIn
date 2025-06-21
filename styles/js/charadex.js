@@ -37,6 +37,13 @@ charadex.initialize.page = async (dataArr, config, dataCallback, listCallback, c
     charadex.tools.addProfileLinks(entry, pageUrl, config.profileProperty); // Go ahead and add profile keys just in case
     if (folders) folders(entry, config.fauxFolder.folderProperty); // If folders, add folder info
     if (entry.class) entry.classbadge = `<span class="badge badge-${charadex.tools.scrub(entry.class)}">${entry.class}</span>`; // Adds a class badge
+
+    // Convert markdown to HTML, if we need to
+    if (config.markdownColumns) {
+      for (let column in config.markdownColumns) {
+        if (entry[column]) entry[column] = charadex.manageData.convertMarkdown(entry[column]);
+      }
+    }
   }
 
   // If there's related data, add it

@@ -376,7 +376,11 @@ charadex.page.masterlist = {
 
     }
 
-  }
+  },
+
+  markdownColumns: [
+    "notes"
+  ]
 
 };
 
