@@ -2,6 +2,7 @@
 /* Import Charadex
 ======================================================================= */
 import { charadex } from './config.js';
+import showdown from "https://cdn.jsdelivr.net/npm/showdown@<version>/dist/showdown.min.js";
 
 
 /* ==================================================================== */
@@ -338,6 +339,22 @@ charadex.manageData = {
       entry.profileid = entry[key];
       entry.profilelink = charadex.manage.url.addParameters(pageUrl, { profile: entry[key] });
     };
+  },
+
+  /* Convert markdown to html
+  ===================================================================== */
+  convertMarkdown(text) {
+    var converter = new showdown.Converter({
+      headerLevelStart: 2,
+      strikethrough: true,
+      tasklists: true,
+      simplifiedAutoLink: true,
+      parseImgDimension: true,
+      backslashEscapesHTMLTags: true ,
+      simpleLineBreaks: true,
+    });
+
+    return converter.makeHtml(text);
   }
 
 }
@@ -386,6 +403,7 @@ charadex.importSheet = async (sheetPage, sheetId = charadex.sheet.id) => {
         info.c[ind].f : info.c[ind].v != null ? 
         info.c[ind].v : "" : "";
     });
+    row = convertMarkdown(row); // convert any potential markdown into html
     scrubbedData.push(row);
   };
 
